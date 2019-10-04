@@ -1,0 +1,32 @@
+- open:
+  tmk_keyboard_master/keyboard/frosty_flake_20140521/keymap_ansi.h
+
+- Edit the keys and layers there with only the end part of the name, for example:
+  KC_A will be A
+  KC_CAPSLOCK will be CAPS
+
+- Save the changes and from the terminal, go to the folder, for example:
+  cd frosty_flake_20140521
+
+- Execute on the terminal:
+  make -f Makefile.lufa
+
+- Open QMK Toolbox
+
+- In the program press open button and select:
+  tmk_keyboard-master/keyboard/frosty_flake_20140521/epiphanies_tmk_frostyflake_20140521_lufa.hex
+
+  Microcontroller: atmega32u2
+
+- Enter into DFU mode in the keyboard pressing:
+  left shift + right shift + pause
+  The keyboard should stop working.
+
+- Press Flash in the QMK Toolbox, the new layout will be flashed and the keyboard should work again
+
+Allowed key codes:
+Open file: tmk_keyboard_master/tmk_core/common/keycode.h
+
+Links:
+https://docs.qmk.fm/#/
+https://github.com/tmk/tmk_core/blob/master/doc/keymap.md#31-momentary-switching
